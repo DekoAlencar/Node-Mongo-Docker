@@ -25,6 +25,6 @@ Deixei o arquivo json do postman caso queira usar para fazer as chamadas.
 Fiz um apk para aproveitar o tempo mesmo.
 Neste caso precisa passar o docker para acesso da intranet, mas como não queria complicar as coisa deixei a critério de vocês
 
-* **[App](DITO.postman_collection.json)**
+* **[App](app.apk)**
 
 ainda precisa ser feito algumas alterações, mas como é só um bônus, não há necessidade adiar o projeto por causa dele ;).
