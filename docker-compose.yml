@@ -1,0 +1,27 @@
+version : '3'
+services: 
+  app:
+    container_name: docker-dito
+    restart: always
+    build: .
+    ports: 
+      - '3000:3000'
+    networks:
+      - backend
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes: 
+      - /data/mongodb/db:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=dito
+    ports:
+      - '27017:27017'
+    networks:
+      - backend
+networks:
+  backend:
+    driver: "bridge"
+    
