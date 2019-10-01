@@ -5,7 +5,7 @@ const environment = {
     DBUSER: 'root',
     DBPORT: 27017,
     DBPASSWORD: 'root',
-    DBNAME: 'dito'
+    DBNAME: 'admin'
 }
 
 export default environment;
